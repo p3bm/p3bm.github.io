@@ -1,3 +1,1 @@
-# My Online Notebook
-
-Test text
+An attempt to collate my thoughts and projects
