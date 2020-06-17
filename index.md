@@ -1,3 +1,7 @@
-# Test header in /index.md
+# Homepage
 
-*Test* _text_ in /index.md
+[Projects]()
+
+[Ideas]()
+
+[Art]()
