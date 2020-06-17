@@ -1,7 +1,3 @@
 # Homepage
 
-[Projects]()
-
-[Ideas]()
-
-[Art]()
+[Projects](https://p3bm.github.io/pages/projects)
