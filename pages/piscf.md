@@ -1,10 +1,20 @@
 # PiSCF - Quantum Chemistry on a Raspberry Pi
 
 What? Running PySCF on a Pi (geddit)
-Why? Quantum chemistry calculations are fun and I don't understand them as much as I should do.
-Gaussian and Spartan make it easy to perform calculations, while somewhat removed from the
-underlying theory. Also, it seemed like a good excuse to brush up on Python and Linux command 
-line skills.
+
+Why? A neat way to explore the creation of computing clusters and the use of schedulers like 
+Slurm. Using PySCF is also forcing me to brush up on my understanding of the theory of 
+quantum chemistry calculations (Gaussian and Spartan are great but can be used as black boxes 
+to some degree).
+
+What's been done before? There are instructions 
+[here](https://web.archive.org/web/20190728184815/http://www.chemsoft.ch/qc/raspigamess.html) 
+for installing GAMESS-US on a Raspberry Pi. Originally linked to from 
+[here](https://www.macinchem.org/blog/files/ed5fcf3b7ad842e1683e8b0c701ab854-1747.php) 
+but I could only view a capture of the site from 2019 on the wayback machine. 
+
+I get Raspberry Pis don't represent great FLOPS per watt but I thought it would be interesting 
+to look at the performance of PySCF on different Pis.
 
 ## Installing PySCF
 
@@ -95,11 +105,15 @@ resulted in a ValueError indicating a NumPy array was too big (memory issue?).
 44 seconds. The maximum temperature reached was 42 degrees celcius, all cores were utilised, 
 and maximum memory usage was observed around 20% (using `top`).
 
-Test after installation of PySCF on 64 bit OS
+Test after installation of PySCF on 64 bit OS:
 
 1. 50 seconds
 
 2. Using cc-pvtz, 6 minutes 16 seconds... it didn't throw an error!
+
+There is a great thesis that looks more rigorously at the difference in performance of HF 
+and DFT calculations between 32 and 64 bit ARM architectures. It also compares ARM with x86, 
+as well as various other novel architectures.
 
 
 ### Raspberry Pi 3 Model B (v1.2)
