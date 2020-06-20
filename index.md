@@ -4,6 +4,8 @@
 
 [Ideas](https://p3bm.github.io/pages/ideas)
 
+[Cool Tools](https://p3bm.github.io/pages/cool-tools)
+
 ---
 
 ### Updates
