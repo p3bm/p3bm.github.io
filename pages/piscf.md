@@ -136,3 +136,10 @@ A cluster of five Raspberry Pi's, four of which are Pi4 (8GB obviously) compute 
 Each one has that miniature tower cooler and they're all submerged in mineral oil.
 
 No, it would't be the most capable machine for the money but it would be *damn cool*.
+
+
+## TODO
+
+Soon to be updated to include calculations using BigDFT (as well as installation instructions).
+
+Fructose DFT calculation on Pi4 - -100.35224096970947585 hartrees, 3 minutes 38 seconds
